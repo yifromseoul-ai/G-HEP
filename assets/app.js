@@ -19,6 +19,12 @@
     document.querySelector('.brand-divider').hidden = true;
   });
 
+  document.querySelectorAll('a[href="#top"]').forEach(link => link.addEventListener('click', event => {
+    event.preventDefault();
+    history.replaceState(null, '', '#top');
+    window.scrollTo({top: 0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+  }));
+
   const guidelineButtons = [...document.querySelectorAll('[data-guideline]')];
   const guidelineCards = [...document.querySelectorAll('.guideline-card')];
   guidelineButtons.forEach(button => button.addEventListener('click', () => {
@@ -58,9 +64,11 @@
     text('#dialog-title', article.title);
     text('#dialog-authors', article.authors);
     text('#dialog-published', formatDate(article.published));
-    text('#dialog-abstract', article.abstract_summary || (article.abstract_available
-      ? '초록 요약은 아직 검토 중입니다. 아래 원문 초록을 확인해 주세요.'
-      : '초록 요약은 아직 검토 중입니다. 공개 서지에서 초록을 확인하지 못했습니다.'));
+    const hasSummary = Boolean(article.abstract_summary?.trim());
+    text('#dialog-abstract-heading', hasSummary ? 'Abstract · 초록 요약' : 'Abstract · 초록 안내');
+    text('#dialog-abstract', hasSummary ? article.abstract_summary : (article.abstract_available
+      ? '원문 초록은 아래 링크에서 확인할 수 있습니다.'
+      : '공개 서지에 초록이 등록되어 있지 않습니다.'));
     const doi = document.querySelector('#dialog-doi');
     doi.replaceChildren();
     if (article.doi) {
@@ -109,11 +117,6 @@
     button.setAttribute('aria-label', `${article.title} 상세 보기`);
     button.addEventListener('click', () => openArticle(article));
     title.append(button);
-    const summary = document.createElement('p');
-    summary.className = 'trend-summary';
-    summary.textContent = article.abstract_summary || (article.abstract_available
-      ? '초록 요약 검토 중 · 상세 보기에서 원문 초록 확인'
-      : '초록 요약 검토 중 · 공개 서지에 초록 없음');
     const bottom = document.createElement('div');
     bottom.className = 'trend-card-bottom';
     const author = document.createElement('span');
@@ -121,7 +124,14 @@
     const more = document.createElement('span');
     more.textContent = '상세 보기 ↗';
     bottom.append(author, more);
-    card.append(top, title, summary, bottom);
+    card.append(top, title);
+    if (article.abstract_summary?.trim()) {
+      const summary = document.createElement('p');
+      summary.className = 'trend-summary';
+      summary.textContent = article.abstract_summary;
+      card.append(summary);
+    }
+    card.append(bottom);
     return card;
   }
 
