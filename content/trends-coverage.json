@@ -1,0 +1,234 @@
+{
+  "as_of": "2026-10-20",
+  "start": "2025-01-01",
+  "total": 3090,
+  "by_journal": {
+    "HIRA Research": 30,
+    "Health Economics": 228,
+    "Journal of Health Technology Assessment": 20,
+    "PharmacoEconomics": 204,
+    "Social Science & Medicine": 1948,
+    "Value in Health": 448,
+    "보건경제와 정책연구": 29,
+    "보건사회연구": 183
+  },
+  "domestic_issues": [
+    {
+      "journal": "보건경제와 정책연구",
+      "issue": "31(1)",
+      "source_url": "https://www.kci.go.kr/kciportal/landing/journalArticleList.kci?vol_isse_id=VOL000181820&sere_id=001714",
+      "listed": 4,
+      "included": 4,
+      "excluded_editorial": 0
+    },
+    {
+      "journal": "보건경제와 정책연구",
+      "issue": "31(2)",
+      "source_url": "https://www.kci.go.kr/kciportal/landing/journalArticleList.kci?vol_isse_id=VOL000184610&sere_id=001714",
+      "listed": 3,
+      "included": 3,
+      "excluded_editorial": 0
+    },
+    {
+      "journal": "보건경제와 정책연구",
+      "issue": "31(3)",
+      "source_url": "https://www.kci.go.kr/kciportal/landing/journalArticleList.kci?vol_isse_id=VOL000188415&sere_id=001714",
+      "listed": 3,
+      "included": 3,
+      "excluded_editorial": 0
+    },
+    {
+      "journal": "보건경제와 정책연구",
+      "issue": "31(4)",
+      "source_url": "https://www.kci.go.kr/kciportal/landing/journalArticleList.kci?vol_isse_id=VOL000190618&sere_id=001714",
+      "listed": 6,
+      "included": 6,
+      "excluded_editorial": 0
+    },
+    {
+      "journal": "보건경제와 정책연구",
+      "issue": "32(1)",
+      "source_url": "https://www.kci.go.kr/kciportal/landing/journalArticleList.kci?vol_isse_id=VOL000193096&sere_id=001714",
+      "listed": 5,
+      "included": 5,
+      "excluded_editorial": 0
+    },
+    {
+      "journal": "보건경제와 정책연구",
+      "issue": "32(2)",
+      "source_url": "https://www.kci.go.kr/kciportal/landing/journalArticleList.kci?vol_isse_id=VOL000197669&sere_id=001714",
+      "listed": 4,
+      "included": 4,
+      "excluded_editorial": 0
+    },
+    {
+      "journal": "보건경제와 정책연구",
+      "issue": "32(3)",
+      "source_url": "https://www.kci.go.kr/kciportal/landing/journalArticleList.kci?vol_isse_id=VOL000200858&sere_id=001714",
+      "listed": 4,
+      "included": 4,
+      "excluded_editorial": 0
+    },
+    {
+      "journal": "보건사회연구",
+      "issue": "45(1)",
+      "source_url": "https://www.kihasa.re.kr/hswr/v.45/1/2025",
+      "listed": 21,
+      "included": 20,
+      "excluded_editorial": 1
+    },
+    {
+      "journal": "보건사회연구",
+      "issue": "45(2)",
+      "source_url": "https://www.kihasa.re.kr/hswr/v.45/2/2025",
+      "listed": 31,
+      "included": 30,
+      "excluded_editorial": 1
+    },
+    {
+      "journal": "보건사회연구",
+      "issue": "45(3)",
+      "source_url": "https://www.kihasa.re.kr/hswr/v.45/3/2025",
+      "listed": 24,
+      "included": 23,
+      "excluded_editorial": 1
+    },
+    {
+      "journal": "보건사회연구",
+      "issue": "45(4)",
+      "source_url": "https://www.kihasa.re.kr/hswr/v.45/4/2025",
+      "listed": 30,
+      "included": 29,
+      "excluded_editorial": 1
+    },
+    {
+      "journal": "보건사회연구",
+      "issue": "46(1)",
+      "source_url": "https://www.kihasa.re.kr/hswr/v.46/1/2026",
+      "listed": 30,
+      "included": 29,
+      "excluded_editorial": 1
+    },
+    {
+      "journal": "보건사회연구",
+      "issue": "46(2)",
+      "source_url": "https://www.kihasa.re.kr/hswr/v.46/2/2026",
+      "listed": 27,
+      "included": 26,
+      "excluded_editorial": 1
+    },
+    {
+      "journal": "보건사회연구",
+      "issue": "46(3)",
+      "source_url": "https://www.kihasa.re.kr/hswr/v.46/3/2026",
+      "listed": 27,
+      "included": 26,
+      "excluded_editorial": 1
+    },
+    {
+      "journal": "Journal of Health Technology Assessment",
+      "year": 2026,
+      "issue_id": "VOL000198001",
+      "issue_number": 1,
+      "article_count": 6,
+      "source_url": "https://www.kci.go.kr/kciportal/po/search/poSereArtiList.kci?sereId=SER000004879&volIsseId=VOL000198001"
+    },
+    {
+      "journal": "Journal of Health Technology Assessment",
+      "year": 2025,
+      "issue_id": "VOL000191497",
+      "issue_number": 2,
+      "article_count": 7,
+      "source_url": "https://www.kci.go.kr/kciportal/po/search/poSereArtiList.kci?sereId=SER000004879&volIsseId=VOL000191497"
+    },
+    {
+      "journal": "Journal of Health Technology Assessment",
+      "year": 2025,
+      "issue_id": "VOL000184677",
+      "issue_number": 1,
+      "article_count": 7,
+      "source_url": "https://www.kci.go.kr/kciportal/po/search/poSereArtiList.kci?sereId=SER000004879&volIsseId=VOL000184677"
+    },
+    {
+      "journal": "HIRA Research",
+      "year": 2026,
+      "issue_id": "VOL000196715",
+      "issue_number": 1,
+      "article_count": 9,
+      "source_url": "https://www.kci.go.kr/kciportal/po/search/poSereArtiList.kci?sereId=SER000005933&volIsseId=VOL000196715"
+    },
+    {
+      "journal": "HIRA Research",
+      "year": 2025,
+      "issue_id": "VOL000189933",
+      "issue_number": 2,
+      "article_count": 6,
+      "source_url": "https://www.kci.go.kr/kciportal/po/search/poSereArtiList.kci?sereId=SER000005933&volIsseId=VOL000189933"
+    },
+    {
+      "journal": "HIRA Research",
+      "year": 2025,
+      "issue_id": "VOL000183978",
+      "issue_number": 1,
+      "article_count": 6,
+      "source_url": "https://www.kci.go.kr/kciportal/po/search/poSereArtiList.kci?sereId=SER000005933&volIsseId=VOL000183978"
+    },
+    {
+      "journal": "HIRA Research",
+      "status": "online-first",
+      "article_count": 9,
+      "source_url": "https://www.hira-research.or.kr/journal/list.html?pn=ahead"
+    }
+  ],
+  "international_sources": {
+    "PharmacoEconomics": {
+      "pubmed_raw": 235,
+      "crossref_raw": 207,
+      "records": 204,
+      "crossref_only_added": 0,
+      "source_abstract_available": 192,
+      "excluded": {
+        "PubMed:publication-type": 31,
+        "Crossref:non-paper-title-or-issue-front-matter": 1
+      }
+    },
+    "Value in Health": {
+      "pubmed_raw": 534,
+      "crossref_raw": 6921,
+      "records": 448,
+      "crossref_only_added": 1,
+      "source_abstract_available": 446,
+      "excluded": {
+        "PubMed:publication-type": 86,
+        "PubMed:non-paper-title": 1,
+        "Crossref:non-paper-title-or-issue-front-matter": 53,
+        "Crossref:supplement": 6333
+      }
+    },
+    "Health Economics": {
+      "pubmed_raw": 230,
+      "crossref_raw": 223,
+      "records": 228,
+      "crossref_only_added": 0,
+      "source_abstract_available": 228,
+      "excluded": {
+        "PubMed:publication-type": 2,
+        "Crossref:non-paper-title-or-issue-front-matter": 23
+      }
+    },
+    "Social Science & Medicine": {
+      "pubmed_raw": 1956,
+      "crossref_raw": 1917,
+      "records": 1948,
+      "crossref_only_added": 41,
+      "source_abstract_available": 1887,
+      "excluded": {
+        "PubMed:publication-type": 47,
+        "PubMed:non-paper-title": 2,
+        "Crossref:non-paper-title-or-issue-front-matter": 46
+      }
+    }
+  },
+  "scope": "Regular article candidates, including online-first items; meeting abstracts, editorials, letters, corrections and retraction notices excluded by source filters.",
+  "summary_note": "Only separately reviewed short summaries are published; source abstracts stay at their original URLs."
+}

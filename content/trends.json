@@ -1,0 +1,46 @@
+[
+  {
+    "id": "vbp-comparative-2026",
+    "title": "주요국 가치기반 지불제도(Value-Based Payment, VBP) 비교 연구: 한국형 제도 설계를 위한 시사점",
+    "journal": "보건사회연구",
+    "scope": "domestic",
+    "published": "2026-03",
+    "authors": "박현정; 이유리; 김소윤",
+    "abstract_summary": "미국·영국·호주·한국의 가치기반 지불제도를 비교하고, 한국형 제도의 설계에서 재정적 책임성, 데이터 인프라와 지역 단위 책임 주체가 갖는 의미를 검토한 연구입니다.",
+    "doi": "10.15709/hswr.2026.46.1.311",
+    "source_url": "https://doi.org/10.15709/hswr.2026.46.1.311"
+  },
+  {
+    "id": "ultrarare-evidence-map-2026",
+    "title": "Evidence Mapping of Concepts, Methods, and Outcomes in the Evaluation of Diagnostic and Therapeutic Technologies for Ultrarare Diseases: A Systematic Scoping Review",
+    "journal": "Value in Health",
+    "scope": "international",
+    "published": "2026-07-14",
+    "authors": "Raul Edison Luna Lazo; Daniela Gorski; Fernanda Coelho Vilela; Júlia Barbosa Domingues da Silva; Laura Helena Schroeder Borges; Stefany Scalco; Irene Tomoko Nakano; Fernando Fernandez-Llimos; Roberto Pontarolo; Inajara Rotta",
+    "abstract_summary": "초희귀질환의 진단·치료기술 평가에 사용된 정의와 방법, 성과지표를 폭넓게 정리한 범위문헌고찰입니다. 연구는 평가체계의 차이와 근거의 불확실성을 살펴봅니다.",
+    "doi": "10.1016/j.jval.2026.06.015",
+    "source_url": "https://www.sciencedirect.com/science/article/pii/S1098301526025350"
+  },
+  {
+    "id": "expert-elicitation-2026",
+    "title": "Applications of Structural Expert Elicitations for Economic Evaluations: A Systematic Review Update",
+    "journal": "PharmacoEconomics",
+    "scope": "international",
+    "published": "2026-06-19",
+    "authors": "Benjamin P Geisler; Fredrik Holmboe; Irene Starinieri; Eline Aas",
+    "abstract_summary": "경제성평가에서 구조화된 전문가 의견수렴이 어떻게 사용되는지 기존 연구를 갱신해 검토했습니다. 전문가 선정, 의견수렴 방식과 의사결정모형 반영 절차의 차이를 살펴봅니다.",
+    "doi": "10.1007/s40273-026-01628-x",
+    "source_url": "https://link.springer.com/article/10.1007/s40273-026-01628-x"
+  },
+  {
+    "id": "prevalence-threshold-2026",
+    "title": "Application of a Prevalence-Adjusted Cost-Effectiveness Threshold Framework for Pulmonary Arterial Hypertension",
+    "journal": "PharmacoEconomics",
+    "scope": "international",
+    "published": "2026-05-05",
+    "authors": "Adnan Alsumali; Vasco M Pontinha; Benjamin G Cohen; Meghan Levy; William V Padula",
+    "abstract_summary": "폐동맥고혈압을 사례로 질환 유병률과 생산 규모를 반영한 비용효과성 임계값의 해석을 제시한 연구입니다. 연구에서 제안한 값은 규범적 급여 결정 기준이 아니라 해당 분석 틀의 결과로 읽어야 합니다.",
+    "doi": "10.1007/s40273-026-01616-1",
+    "source_url": "https://link.springer.com/article/10.1007/s40273-026-01616-1"
+  }
+]
