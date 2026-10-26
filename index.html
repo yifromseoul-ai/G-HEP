@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#063670">
-  <meta name="description" content="가천대학교 보건경제정책연구소 G-HEP의 소개, 경제성평가 지침, 연구동향과 이슈브리프를 살펴보는 웹사이트입니다.">
+  <meta name="description" content="가천대학교 보건경제정책연구소 G-HEP의 소개, 경제성평가 지침, 연구동향과 월간 보건경제 동향 리포트를 살펴보는 웹사이트입니다.">
   <title>G-HEP | 가천대학교 보건경제정책연구소</title>
   <link rel="stylesheet" href="./assets/styles.css">
   <script src="./assets/app.js" defer></script>
@@ -31,7 +31,7 @@
         <a href="#about">연구소 소개</a>
         <a href="#guidelines">주요국 경제성평가 지침</a>
         <a href="#trends">연구동향</a>
-        <a href="#briefs">이슈브리프</a>
+        <a href="#briefs">월간 동향 리포트</a>
       </nav>
     </div>
   </header>
@@ -65,7 +65,7 @@
           <a href="#about" class="explore-card"><span class="explore-no">01</span><span class="explore-icon" aria-hidden="true">◌</span><h3>연구소 소개</h3><p>연구소 소개 · 연구분야<br>주요 연구실적 · 오시는 길</p><span class="card-arrow" aria-hidden="true">↗</span></a>
           <a href="#guidelines" class="explore-card"><span class="explore-no">02</span><span class="explore-icon" aria-hidden="true">▤</span><h3>경제성평가 지침</h3><p>국내 · England · Australia<br>Canada · United States · ISPOR</p><span class="card-arrow" aria-hidden="true">↗</span></a>
           <a href="#trends" class="explore-card"><span class="explore-no">03</span><span class="explore-icon" aria-hidden="true">⌁</span><h3>연구동향</h3><p>국내외 학술지별 탐색<br>출판일 순 통합 목록</p><span class="card-arrow" aria-hidden="true">↗</span></a>
-          <a href="#briefs" class="explore-card"><span class="explore-no">04</span><span class="explore-icon" aria-hidden="true">✳</span><h3>이슈브리프</h3><p>급여평가 · 지침 개정<br>경평 방법론 · 희귀질환</p><span class="card-arrow" aria-hidden="true">↗</span></a>
+          <a href="#briefs" class="explore-card"><span class="explore-no">04</span><span class="explore-icon" aria-hidden="true">✳</span><h3>월간 동향 리포트</h3><p>급여평가 · 보장성 변화<br>국제 평가 논의</p><span class="card-arrow" aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
@@ -136,9 +136,10 @@
           <div class="trends-main">
             <div class="trends-toolbar"><div class="scope-switch" role="group" aria-label="국내외 분류"><button type="button" class="scope-button active" data-scope="all" aria-pressed="true">전체</button><button type="button" class="scope-button" data-scope="domestic" aria-pressed="false">국내</button><button type="button" class="scope-button" data-scope="international" aria-pressed="false">해외</button></div><span class="result-count" id="trend-count" aria-live="polite">게시글 불러오는 중</span></div>
             <div class="search-row"><label class="search-field"><span class="visually-hidden">제목 또는 저자 검색</span><input id="trend-search" type="search" placeholder="제목·저자·키워드 검색" autocomplete="off"><span aria-hidden="true">⌕</span></label><label class="sort-field"><span class="visually-hidden">정렬</span><select id="trend-sort"><option value="newest">출판일 최신순</option><option value="oldest">출판일 오래된순</option></select></label></div>
+            <section class="reviewed-preview" id="reviewed-preview" aria-labelledby="reviewed-preview-title" hidden><div class="reviewed-preview-heading"><h3 id="reviewed-preview-title">해외 학술지 초록 요약</h3><span id="reviewed-preview-count"></span></div><div class="reviewed-preview-list" id="reviewed-preview-list"></div></section>
             <div class="trend-list" id="trend-list" aria-live="polite"><p class="loading-message">연구동향을 불러오는 중입니다.</p></div>
             <button class="trend-more" id="trend-more" type="button" hidden>논문 더 보기</button>
-            <p class="trend-footnote">2025년 이후 학술지 논문을 출판일 순으로 볼 수 있습니다. 자동 수집 서지는 분류·원문 대조가 진행 중이며, 초록 요약은 별도 확인한 논문에만 제공합니다.</p>
+            <p class="trend-footnote">2025년 이후 학술지 논문을 출판일 순으로 볼 수 있습니다. 자동 수집 서지는 분류·원문 대조가 진행 중입니다. 확인된 해외 논문의 초록 요약은 위에서 먼저 볼 수 있고, 나머지는 상세 보기에서 원문 초록으로 연결합니다.</p>
           </div>
         </div>
       </div>
@@ -146,18 +147,16 @@
 
     <section class="briefs section" id="briefs" aria-labelledby="briefs-title">
       <div class="container">
-        <div class="section-heading"><div><p class="eyebrow">04 / ISSUE BRIEF</p><h2 id="briefs-title">이슈브리프</h2></div><p>한 달 동안 주목할 만한 급여평가 결정과 방법론·제도 변화를 짚어봅니다.</p></div>
-        <div class="brief-feature"><div class="brief-feature-main"><span class="issue-badge">MONTHLY ISSUE BRIEF</span><h3>변화를 따라가고,<br>쟁점을 정리합니다.</h3><p>새로운 치료기술의 급여권고·비권고 결정, 경제성평가 지침의 제·개정, 위험분담제와 희귀질환 평가 방법론 등을 다룰 공간입니다.</p></div><div class="brief-feature-side"><span class="issue-side-label">COVERAGE</span><ol><li><span>01</span> 신약·희귀의약품 급여평가</li><li><span>02</span> 경제성평가 지침의 변화</li><li><span>03</span> 위험분담제와 접근성</li><li><span>04</span> 새로운 평가 방법론과 연구</li></ol></div></div>
-        <div class="brief-bottom"><div><span class="panel-index">REPORT &amp; BRIEF ARCHIVE</span><h3>발행 목록</h3><p>월간 리포트와 이슈별 브리프를 발행월 순서로 살펴보세요.</p></div><span class="brief-count" id="brief-count" aria-live="polite">브리프 목록 불러오는 중</span></div>
+        <div class="section-heading"><div><p class="eyebrow">04 / MONTHLY REPORT</p><h2 id="briefs-title">월간 보건경제 동향 리포트</h2></div><p>한 달 동안 주목할 만한 급여평가 결정과 방법론·제도 변화를 짚어봅니다.</p></div>
+        <div class="brief-feature"><div class="brief-feature-main"><span class="issue-badge">MONTHLY REPORT</span><h3>변화를 따라가고,<br>쟁점을 정리합니다.</h3><p>새로운 치료기술의 급여권고·비권고 결정, 경제성평가 지침의 제·개정, 위험분담제와 희귀질환 평가 방법론 등을 원문을 바탕으로 정리합니다.</p></div><div class="brief-feature-side"><span class="issue-side-label">COVERAGE</span><ol><li><span>01</span> 신약·희귀의약품 급여평가</li><li><span>02</span> 경제성평가 지침의 변화</li><li><span>03</span> 위험분담제와 접근성</li><li><span>04</span> 새로운 평가 방법론과 연구</li></ol></div></div>
+        <div class="brief-bottom"><div><span class="panel-index">MONTHLY REPORT ARCHIVE</span><h3>발행 목록</h3><p>월간 보건경제 동향 리포트를 발행월 순서로 살펴보세요.</p></div></div>
         <article class="report-list-card"><div><span class="report-date">2026.09 · 월간 동향 리포트</span><h4>2026년 9월 월간 보건경제 동향 리포트</h4><p>국내외 급여평가 결정, 희귀질환 보장성 변화와 비용효과성 평가를 원문과 함께 정리했습니다.</p></div><a href="./reports/2026-09.html" aria-label="2026년 9월 월간 보건경제 동향 리포트 읽기">리포트 읽기 ↗</a></article>
-        <div class="brief-list" id="brief-list" aria-live="polite"></div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="container footer-inner"><div class="footer-top"><div><p class="footer-kicker">GACHON UNIVERSITY</p><strong>가천대학교<br>보건경제정책연구소</strong><p>G-HEP · Gachon Institute for<br>Health Economics and Policy</p></div><nav aria-label="하단 사이트맵"><a href="#about">연구소 소개</a><a href="./research-fields.html">연구분야</a><a href="./research-achievements.html">연구실적</a><a href="#guidelines">경제성평가 지침</a><a href="#trends">연구동향</a><a href="#briefs">이슈브리프</a></nav></div><div class="footer-bottom"><span>경기도 성남시 수정구 성남대로 1342 (가천관) · <a href="mailto:yifromseoul@gmail.com">yifromseoul@gmail.com</a></span><span>© 2026 G-HEP</span><a href="#top">맨 위로 ↑</a></div></div></footer>
+  <footer class="site-footer"><div class="container footer-inner"><div class="footer-top"><div><p class="footer-kicker">GACHON UNIVERSITY</p><strong>가천대학교<br>보건경제정책연구소</strong><p>G-HEP · Gachon Institute for<br>Health Economics and Policy</p></div><nav aria-label="하단 사이트맵"><a href="#about">연구소 소개</a><a href="./research-fields.html">연구분야</a><a href="./research-achievements.html">연구실적</a><a href="#guidelines">경제성평가 지침</a><a href="#trends">연구동향</a><a href="#briefs">월간 동향 리포트</a></nav></div><div class="footer-bottom"><span>경기도 성남시 수정구 성남대로 1342 (가천관) · <a href="mailto:yifromseoul@gmail.com">yifromseoul@gmail.com</a></span><span>© 2026 G-HEP</span><a href="#top">맨 위로 ↑</a></div></div></footer>
 
   <dialog class="article-dialog" id="article-dialog" aria-labelledby="dialog-title"><div class="dialog-shell"><button class="dialog-close" id="dialog-close" type="button" aria-label="상세 보기 닫기">×</button><div class="dialog-content"><span class="dialog-label">RESEARCH DETAIL</span><p class="dialog-journal" id="dialog-journal"></p><p class="dialog-review-status" id="dialog-review-status" hidden>온라인 선공개 서지 · 논문 유형 검토 중</p><h2 id="dialog-title"></h2><dl class="article-meta"><div><dt>저자</dt><dd id="dialog-authors"></dd></div><div><dt>출판일</dt><dd id="dialog-published"></dd></div><div><dt>DOI</dt><dd id="dialog-doi"></dd></div></dl><h3 id="dialog-abstract-heading">Abstract · 초록 요약</h3><p class="dialog-abstract" id="dialog-abstract"></p><a class="abstract-source-link" id="dialog-abstract-source" href="#" target="_blank" rel="noopener noreferrer" hidden>원문 초록 보기 ↗</a><a class="button button-primary" id="dialog-source" href="#" target="_blank" rel="noopener noreferrer">논문 원문 보기 <span aria-hidden="true">↗</span></a></div></div></dialog>
-  <dialog class="article-dialog" id="brief-dialog" aria-labelledby="brief-dialog-title"><div class="dialog-shell"><button class="dialog-close" id="brief-dialog-close" type="button" aria-label="이슈브리프 닫기">×</button><div class="dialog-content"><span class="dialog-label">G-HEP ISSUE BRIEF</span><p class="dialog-journal" id="brief-dialog-meta"></p><h2 id="brief-dialog-title"></h2><p class="dialog-abstract" id="brief-dialog-summary"></p><div id="brief-dialog-sections" class="brief-dialog-sections"></div><div id="brief-dialog-sources" class="brief-dialog-sources"></div></div></div></dialog>
 </body>
 </html>
