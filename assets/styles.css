@@ -36,15 +36,6 @@ button,input,select{font:inherit}button{cursor:pointer}a{color:inherit;text-deco
 .contact-map{display:block;min-height:0}.contact-map iframe{display:block;height:315px}.contact-map>div{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 19px}.contact-map small{text-align:right}
 @media(max-width:620px){.contact-map iframe{height:275px}.contact-map>div{padding:13px 18px}}
 @media(min-width:621px){.about-primary p{word-break:keep-all;overflow-wrap:break-word}}
-.reviewed-preview{background:#eaf3fb;border:1px solid #cddfed;padding:19px 20px;margin:0 0 22px}
-.reviewed-preview[hidden]{display:none}
-.reviewed-preview-heading{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 0 14px}
-.reviewed-preview-heading h3{font-size:18px;letter-spacing:-.04em;margin:0;color:#183d60}
-.reviewed-preview-heading span{color:#5c7891;font-size:12px;font-weight:700;white-space:nowrap}
-.reviewed-preview-list{display:grid;gap:10px}
-.reviewed-preview .trend-card{padding:19px 20px}
-.reviewed-preview .trend-card h3{font-size:16px}
 .trend-card-bottom button{border:0;background:none;padding:0;color:var(--blue);font:inherit;font-weight:800;white-space:nowrap;cursor:pointer}
 .trend-card-bottom button:hover{text-decoration:underline}
 .trend-card-bottom button:focus-visible{outline:2px solid var(--blue);outline-offset:4px}
-@media(max-width:620px){.reviewed-preview{padding:15px}.reviewed-preview .trend-card{padding:17px}}

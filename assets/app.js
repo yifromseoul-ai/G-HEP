@@ -41,9 +41,6 @@
   const trendList = document.querySelector('#trend-list');
   const trendCount = document.querySelector('#trend-count');
   const trendMore = document.querySelector('#trend-more');
-  const reviewedPreview = document.querySelector('#reviewed-preview');
-  const reviewedPreviewList = document.querySelector('#reviewed-preview-list');
-  const reviewedPreviewCount = document.querySelector('#reviewed-preview-count');
   const search = document.querySelector('#trend-search');
   const sort = document.querySelector('#trend-sort');
   const scopeButtons = [...document.querySelectorAll('[data-scope]')];
@@ -67,11 +64,6 @@
     text('#dialog-title', article.title);
     text('#dialog-authors', article.authors);
     text('#dialog-published', formatDate(article.published));
-    const hasSummary = Boolean(article.abstract_summary?.trim());
-    text('#dialog-abstract-heading', hasSummary ? 'Abstract · 초록 요약' : 'Abstract · 초록 안내');
-    text('#dialog-abstract', hasSummary ? article.abstract_summary : (article.abstract_available
-      ? '원문 초록은 아래 링크에서 확인할 수 있습니다.'
-      : '공개 서지에 초록이 등록되어 있지 않습니다.'));
     const doi = document.querySelector('#dialog-doi');
     doi.replaceChildren();
     if (article.doi) {
@@ -131,23 +123,8 @@
     more.addEventListener('click', () => openArticle(article));
     bottom.append(author, more);
     card.append(top, title);
-    if (article.abstract_summary?.trim()) {
-      const summary = document.createElement('p');
-      summary.className = 'trend-summary';
-      summary.textContent = article.abstract_summary;
-      card.append(summary);
-    }
     card.append(bottom);
     return card;
-  }
-
-  function renderReviewedPreview(visible) {
-    const reviewed = visible.filter(article => article.scope === 'international' && article.abstract_summary?.trim());
-    reviewedPreview.hidden = !reviewed.length;
-    reviewedPreviewList.replaceChildren();
-    if (!reviewed.length) return;
-    reviewedPreviewCount.textContent = `${reviewed.length}건`;
-    reviewed.forEach(article => reviewedPreviewList.append(createCard(article)));
   }
 
   function renderTrends(resetLimit = false) {
@@ -155,10 +132,9 @@
     const query = search.value.trim().toLocaleLowerCase();
     const visible = articles
       .filter(article => (activeScope === 'all' || article.scope === activeScope) && (activeJournal === 'all' || article.journal === activeJournal))
-      .filter(article => !query || [article.title, article.authors, article.journal, article.abstract_summary].some(value => (value || '').toLocaleLowerCase().includes(query)))
+      .filter(article => !query || [article.title, article.authors, article.journal].some(value => (value || '').toLocaleLowerCase().includes(query)))
       .sort((a, b) => sort.value === 'oldest' ? a.published.localeCompare(b.published) : b.published.localeCompare(a.published));
     trendCount.textContent = `총 ${visible.length}건${visible.length > visibleLimit ? ` · ${visibleLimit}건 표시` : ''}`;
-    renderReviewedPreview(visible);
     trendList.replaceChildren();
     trendMore.hidden = visible.length <= visibleLimit;
     if (!visible.length) {
